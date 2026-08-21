@@ -1,0 +1,4 @@
+# Auto detect text files and perform LF normalization
+* text=auto
+MacOs/* filter=lfs diff=lfs merge=lfs -text
+MacOs/Frameworks/Electron[[:space:]]Framework.framework/Versions/A/Electron[[:space:]]Framework filter=lfs diff=lfs merge=lfs -text

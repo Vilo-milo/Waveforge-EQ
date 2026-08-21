@@ -1,0 +1,20 @@
+{
+  "name": "waveforge-eq",
+  "productName": "WaveForge",
+  "version": "1.0.0",
+  "description": "System-wide equalizer with boost and spatial audio",
+  "main": "main.js",
+  "private": true,
+  "scripts": {
+    "start": "electron .",
+    "genicon": "node build/gen-icon.js",
+    "dist": "electron-packager . WaveForge --platform=darwin --out=dist --overwrite --app-bundle-id=com.vilohit.waveforge --icon=build/icon --ignore=\"^/dist\" --ignore=\"^/build$\""
+  },
+  "devDependencies": {
+    "@electron/packager": "^18.3.6",
+    "electron": "^33.4.11"
+  },
+  "allowScripts": {
+    "electron@33.4.11": true
+  }
+}
